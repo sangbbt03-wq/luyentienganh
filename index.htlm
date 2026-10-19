@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#2563eb">
+<title>Ôn thi tiếng Anh A2+ | 60 câu trắc nghiệm</title>
+<style>
+:root{--blue:#2563eb;--blue2:#1d4ed8;--pale:#eff6ff;--ink:#172033;--muted:#64748b;--line:#dbe4f0;--good:#15803d;--goodbg:#f0fdf4;--bad:#b91c1c;--badbg:#fef2f2;--card:#fff;--bg:#f4f8ff}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;line-height:1.55}
+button{font:inherit;cursor:pointer}button:focus-visible{outline:3px solid #93c5fd;outline-offset:2px}
+header{background:linear-gradient(120deg,#1d4ed8,#3b82f6);color:white;padding:26px 18px 32px}
+.wrap{max-width:960px;margin:auto}header h1{margin:0 0 8px;font-size:clamp(1.45rem,4vw,2.2rem);line-height:1.2}header p{margin:0;opacity:.94}
+.pills{display:flex;gap:8px;flex-wrap:wrap;margin-top:16px}.pill{border:1px solid #ffffff70;background:#ffffff1a;border-radius:999px;padding:5px 11px;font-size:.88rem}
+main{max-width:960px;margin:-15px auto 36px;padding:0 14px}.panel{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:clamp(16px,3vw,26px);box-shadow:0 8px 26px #1e3a8a0c;margin-bottom:16px}
+h2{font-size:1.25rem;margin:0 0 12px}h3{font-size:1.1rem;margin:0 0 10px}
+.intro-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin:18px 0}.stat{background:var(--pale);padding:12px;border-radius:12px}.stat strong{display:block;font-size:1.15rem;color:var(--blue)}.stat span{font-size:.88rem;color:#475569}
+.btnrow{display:flex;gap:10px;flex-wrap:wrap}.btn{border:0;border-radius:11px;padding:11px 16px;font-weight:700}.primary{background:var(--blue);color:white}.primary:hover{background:var(--blue2)}.secondary{background:#e8eef8;color:#1e293b}.danger{background:#fee2e2;color:#991b1b}.hidden{display:none!important}
+.modebox{display:flex;gap:10px;flex-wrap:wrap;margin:14px 0}.mode-option{border:1px solid var(--line);border-radius:12px;padding:12px;flex:1;min-width:190px;background:#fff}.mode-option:has(input:checked){border-color:var(--blue);background:var(--pale)}.mode-option input{margin-right:8px}
+.topline{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-bottom:14px}.small{font-size:.9rem;color:var(--muted)}.timer{font-variant-numeric:tabular-nums;font-weight:800;color:var(--blue);background:var(--pale);padding:7px 12px;border-radius:10px}.timer.warn{color:var(--bad);background:var(--badbg)}
+.progress{height:9px;background:#e5edf8;border-radius:999px;overflow:hidden;margin:12px 0 20px}.progress div{height:100%;width:0;background:var(--blue);transition:width .2s}
+.question-meta{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-bottom:12px}.tag{font-size:.78rem;font-weight:700;background:#eaf2ff;color:#1d4ed8;border-radius:999px;padding:4px 9px}.qnumber{font-weight:800;color:var(--muted);font-size:.9rem}.question{font-size:clamp(1.08rem,2.7vw,1.35rem);font-weight:750;line-height:1.4;margin:0 0 18px}
+.options{display:grid;gap:10px}.option{display:flex;align-items:flex-start;text-align:left;gap:12px;width:100%;padding:13px 14px;border:1.5px solid var(--line);border-radius:13px;background:#fff;color:var(--ink);transition:.15s}.option:hover:not(:disabled){border-color:#93c5fd;background:#f8fbff}.letter{display:inline-flex;align-items:center;justify-content:center;flex:0 0 29px;height:29px;border-radius:9px;background:#edf2f9;font-weight:800;color:#334155}.option.correct{border-color:#22c55e;background:var(--goodbg)}.option.correct .letter{background:#dcfce7;color:var(--good)}.option.incorrect{border-color:#f87171;background:var(--badbg)}.option.incorrect .letter{background:#fee2e2;color:var(--bad)}.option:disabled{cursor:default}
+.feedback{margin-top:17px;padding:16px;border-radius:13px;border:1px solid var(--line);background:#f8fafc}.feedback.good{border-color:#86efac;background:var(--goodbg)}.feedback.bad{border-color:#fca5a5;background:var(--badbg)}.feedback h3{margin-bottom:6px}.feedback p{margin:7px 0}.feedback .correctline{font-weight:750}
+.controls{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;margin-top:20px}.controls .right{display:flex;gap:8px;flex-wrap:wrap}
+.exam-note{padding:11px 13px;background:#fffbeb;border:1px solid #fde68a;border-radius:11px;color:#854d0e;font-size:.9rem;margin-bottom:15px}
+.result-score{font-size:2.7rem;font-weight:850;color:var(--blue);line-height:1.2}.result-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin:18px 0}.result-stat{padding:13px;border-radius:12px;background:#f1f5f9}.result-stat strong{display:block;font-size:1.3rem}.review-item{padding:15px 0;border-bottom:1px solid var(--line)}.review-item:last-child{border-bottom:0}.review-item p{margin:6px 0}.review-bad{color:var(--bad);font-weight:700}.review-good{color:var(--good);font-weight:700}
+footer{text-align:center;color:var(--muted);font-size:.85rem;padding:0 15px 30px}
+@media(max-width:600px){header{padding:22px 15px 28px}.intro-grid{grid-template-columns:1fr}.stat{display:flex;align-items:center;justify-content:space-between;gap:12px}.stat strong{font-size:1rem}.panel{border-radius:14px}.result-grid{grid-template-columns:1fr 1fr}.btn{flex:1}.controls .right{width:100%}.controls .right .btn{flex:1}.option{padding:12px}.timer{font-size:.9rem}}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+<h1>Ôn thi tiếng Anh A2+</h1>
+<p>Bài luyện tập tổng hợp dựa trên tài liệu Word của bạn</p>
+<div class="pills"><span class="pill">60 câu trắc nghiệm</span><span class="pill">4 lựa chọn · 1 đáp án đúng</span><span class="pill">45 phút thi thử</span><span class="pill">Anh – Việt</span></div>
+</div></header>
+<main>
+<section id="home" class="panel">
+<h2>Trước khi bắt đầu</h2>
+<p>Bài ôn tập bao gồm ngữ pháp, từ vựng, cụm động từ, so sánh, thói quen dùng mạng xã hội, mua sắm và bài đọc về cách tiếp thị cửa hàng. Câu hỏi sẽ được trộn thứ tự và vị trí đáp án.</p>
+<div class="intro-grid">
+<div class="stat"><strong>60 câu</strong><span>Chọn A, B, C hoặc D</span></div>
+<div class="stat"><strong>Chi tiết</strong><span>Giải thích đúng và sai</span></div>
+<div class="stat"><strong>Responsive</strong><span>Dùng trên máy tính và điện thoại</span></div>
+</div>
+<h3>Chọn chế độ làm bài</h3>
+<div class="modebox">
+<label class="mode-option"><input type="radio" name="mode" value="practice" checked><strong>Chế độ luyện tập</strong><br><span class="small">Sau mỗi câu, xem ngay giải thích và lý do các lựa chọn khác sai.</span></label>
+<label class="mode-option"><input type="radio" name="mode" value="exam"><strong>Chế độ thi thử</strong><br><span class="small">Làm hết bài rồi chấm điểm và xem giải thích. Thời gian 45 phút.</span></label>
+</div>
+<div class="exam-note">Lưu ý: Chế độ thi thử có đồng hồ 45 phút. Chế độ luyện tập không giới hạn thời gian. Tiến độ không được lưu khi đóng hoặc tải lại trang.</div>
+<button class="btn primary" id="startBtn">Bắt đầu làm bài →</button>
+</section>
+
+<section id="quiz" class="panel hidden">
+<div class="topline"><div><strong id="progressText">Câu 1 / 60</strong><div class="small" id="answeredText">Đã trả lời: 0</div></div><div id="timer" class="timer hidden">45:00</div></div>
+<div class="progress"><div id="progressBar"></div></div>
+<div id="examNote" class="exam-note hidden">Chế độ thi thử: giải thích sẽ hiển thị sau khi nộp bài.</div>
+<div class="question-meta"><span class="qnumber" id="qnum">QUESTION 1</span><span class="tag" id="category">Grammar</span></div>
+<p class="question" id="questionText"></p>
+<div class="options" id="options"></div>
+<div id="feedback" class="feedback hidden" aria-live="polite"></div>
+<div class="controls">
+<button class="btn secondary" id="prevBtn">← Câu trước</button>
+<div class="right">
+<button class="btn secondary" id="nextBtn">Câu tiếp theo →</button>
+<button class="btn primary hidden" id="submitBtn">Nộp bài</button>
+</div>
+</div>
+</section>
+
+<section id="result" class="panel hidden">
+<h2 id="resultTitle">Kết quả bài làm</h2>
+<div class="result-score" id="scorePercent">0%</div><p id="resultMessage"></p>
+<div class="result-grid">
+<div class="result-stat"><strong id="correctCount">0</strong><span>Câu đúng</span></div>
+<div class="result-stat"><strong id="wrongCount">0</strong><span>Câu sai</span></div>
+<div class="result-stat"><strong id="blankCount">0</strong><span>Chưa trả lời</span></div>
+</div>
+<div class="btnrow"><button class="btn primary" id="retryWrongBtn">Làm lại câu sai</button><button class="btn secondary" id="allReviewBtn">Xem toàn bộ lời giải</button><button class="btn secondary" id="restartBtn">Làm bài mới</button></div>
+<div id="review" class="hidden" style="margin-top:22px"></div>
+</section>
+</main>
+<footer>Ôn tập cá nhân · Nội dung dựa trên tài liệu Word đã cung cấp. Hãy đọc kỹ giải thích để ghi nhớ quy tắc.</footer>
+<script>
+const BANK = [{"category": "Grammar", "q": "She _____ her homework, so she can relax now.", "options": ["has finished", "finished", "have finished", "is finish"], "correct": 0, "why": "Present perfect: has + past participle. “She” takes “has,” and “finished” is the past participle.", "wrong": "B uses simple past and does not emphasize a present result; C uses “have” with the wrong subject; D is grammatically incorrect."}, {"category": "Grammar", "q": "I _____ in this college since September.", "options": ["have studied", "studied", "am study", "has studied"], "correct": 0, "why": "Use the present perfect with “since” for an action that started in the past and continues now. “I have studied” is correct.", "wrong": "B usually describes a finished past period; C is not a correct verb form; D uses “has” with “I.”"}, {"category": "Grammar", "q": "They _____ three marketing videos this week.", "options": ["have made", "has made", "are make", "made have"], "correct": 0, "why": "“They” takes “have” + past participle: have made. The time period “this week” may still be continuing.", "wrong": "B has the wrong auxiliary for “they”; C is not a valid verb form; D has the words in the wrong order."}, {"category": "Grammar", "q": "Which word normally has the -ed ending pronounced /ɪd/?", "options": ["wanted", "washed", "played", "worked"], "correct": 0, "why": "The -ed ending is pronounced /ɪd/ after /t/ or /d/. “Wanted” ends in /t/ before -ed.", "wrong": "B and D have /t/ endings for -ed; C has a voiced sound and its -ed is pronounced /d/."}, {"category": "Grammar", "q": "Which word has the -ed ending pronounced /t/?", "options": ["helped", "needed", "opened", "called"], "correct": 0, "why": "“Helped” ends with /t/ because the base verb ends in the voiceless sound /p/.", "wrong": "B is /ɪd/ because “need” ends in /d/; C and D have /d/ endings."}, {"category": "Comparisons", "q": "Phu Quoc beaches are _____ than Pattaya beaches.", "options": ["nicer", "nicest", "more nice", "the nicer"], "correct": 0, "why": "For the short adjective “nice,” add -r: nicer than. Use “than” to compare two things.", "wrong": "B is a superlative; C is not the standard form; D incorrectly adds “the” in this comparative structure."}, {"category": "Comparisons", "q": "This city is _____ than my hometown.", "options": ["more modern", "moderner", "the most modern", "modernest"], "correct": 0, "why": "“Modern” is treated as a longer adjective, so use “more modern than.”", "wrong": "B and D use incorrect forms; C is a superlative for comparing one item with a group."}, {"category": "Comparisons", "q": "Today is _____ than yesterday.", "options": ["hotter", "more hot", "hottest", "the hotter"], "correct": 0, "why": "For “hot,” double the final consonant and add -er: hotter than.", "wrong": "B is not the usual correct form; C is superlative; D is not the correct comparative structure."}, {"category": "Comparisons", "q": "My new phone is _____ than my old phone.", "options": ["better", "gooder", "best", "more good"], "correct": 0, "why": "“Good” is irregular: good → better → the best. Use “better than” for two phones.", "wrong": "B and D are incorrect forms; C is superlative, not comparative."}, {"category": "Comparisons", "q": "This is _____ shop in the town.", "options": ["the cheapest", "cheaper", "more cheap", "the most cheap"], "correct": 0, "why": "Use “the” + adjective-est for a short adjective in the superlative: the cheapest.", "wrong": "B compares two things; C is an incorrect form; D is not the usual form for this short adjective."}, {"category": "Comparisons", "q": "The Pacific is _____ ocean in the world.", "options": ["the biggest", "bigger", "the most big", "biggest than"], "correct": 0, "why": "A superlative compares one item with a whole group: the biggest ocean.", "wrong": "B is comparative; C is not the correct form; D wrongly uses “than” and omits “the.”"}, {"category": "Comparisons", "q": "Which is the correct irregular comparative of “bad”?", "options": ["worse", "badder", "worst", "more bad"], "correct": 0, "why": "“Bad” changes to “worse” in the comparative and “the worst” in the superlative.", "wrong": "B and D are incorrect forms; C is the superlative."}, {"category": "Verb patterns", "q": "I want _____ my English for work.", "options": ["to improve", "improving", "improve to", "improved"], "correct": 0, "why": "Use “want + to + base verb”: want to improve.", "wrong": "B does not follow the pattern after “want”; C reverses the structure; D is the past form."}, {"category": "Verb patterns", "q": "We decided _____ a new website.", "options": ["to build", "building", "build", "built"], "correct": 0, "why": "Use “decide + to + base verb”: decided to build.", "wrong": "B is not the pattern taught in the notes; C needs “to”; D is the past form."}, {"category": "Verb patterns", "q": "Please remember _____ your phone before you leave.", "options": ["to take", "taking to", "take", "took"], "correct": 0, "why": "“Remember to do” means not forget a task that needs to be done.", "wrong": "B has the wrong order; C needs “to”; D is past tense."}, {"category": "Verb patterns", "q": "He forgot _____ the report, so his manager was unhappy.", "options": ["to send", "sending to", "send", "sent to"], "correct": 0, "why": "“Forget to do” means fail to do a required task. He did not send the report.", "wrong": "B has the wrong structure; C needs “to”; D is not the correct verb pattern."}, {"category": "Verb patterns", "q": "She is learning _____ a digital marketing campaign.", "options": ["to plan", "plan", "planning to", "planned"], "correct": 0, "why": "“Learn + to + base verb” is the pattern in the notes: learning to plan.", "wrong": "B needs “to”; C changes the meaning/structure; D is a past form."}, {"category": "Verb patterns", "q": "I need _____ more vocabulary every day.", "options": ["to learn", "learning", "learned to", "to learning"], "correct": 0, "why": "Use “need + to + base verb”: need to learn.", "wrong": "B is not the expected pattern; C is not the correct form here; D uses a gerund after “to.”"}, {"category": "Verb patterns", "q": "Which sentence means “make an effort to do something”?", "options": ["I try to speak English every day.", "I try speaking English every day to see how it feels.", "I tried of speak English.", "I try speak English every day."], "correct": 0, "why": "“Try to do” means make an effort to do something.", "wrong": "B means experiment with an action; C and D are grammatically incorrect."}, {"category": "Verb patterns", "q": "You look tired. Try _____ some tea and resting.", "options": ["drinking", "to drink to", "drink", "drank"], "correct": 0, "why": "“Try doing” can mean experiment with a possible solution. “Try drinking some tea” suggests a possible remedy.", "wrong": "B is incorrect; C needs “to” after “try” in this structure; D is past tense."}, {"category": "Vocabulary", "q": "Please _____ your jacket before you enter the warm room.", "options": ["take off", "put on", "set off", "find out"], "correct": 0, "why": "“Take off” means remove clothing.", "wrong": "“Put on” means wear; “set off” means leave/start a journey; “find out” means discover information."}, {"category": "Vocabulary", "q": "It is cold outside, so _____ your coat.", "options": ["put on", "take off", "give up", "look for"], "correct": 0, "why": "“Put on” means wear clothing.", "wrong": "“Take off” means remove clothing; “give up” means stop trying; “look for” means search."}, {"category": "Vocabulary", "q": "I need to _____ who our customers are.", "options": ["find out", "take off", "wear", "give up"], "correct": 0, "why": "“Find out” means discover or learn information.", "wrong": "“Take off” means remove clothing/leave the ground; “wear” means have clothes on; “give up” means stop trying."}, {"category": "Vocabulary", "q": "I cannot find my keys. I will _____ them.", "options": ["look for", "set off", "give up", "put on"], "correct": 0, "why": "“Look for” means search for something.", "wrong": "“Set off” means leave; “give up” means stop trying; “put on” means wear."}, {"category": "Vocabulary", "q": "We will _____ early tomorrow morning for the mountains.", "options": ["set off", "find out", "take off my shoes", "give up"], "correct": 0, "why": "“Set off” means leave or begin a journey.", "wrong": "“Find out” means discover; “take off my shoes” means remove shoes; “give up” means stop trying."}, {"category": "Vocabulary", "q": "After trying many times, don't _____. Keep practicing.", "options": ["give up", "put on", "look for", "take off"], "correct": 0, "why": "“Give up” means stop trying; the sentence advises continuing.", "wrong": "The other options mean wear, search, or remove clothing/leave the ground."}, {"category": "Vocabulary", "q": "A _____ is usually a raised area lower than a mountain.", "options": ["hill", "jungle", "waterfall", "desert"], "correct": 0, "why": "A hill is a raised area of land, usually lower than a mountain.", "wrong": "A jungle is dense forest; a waterfall is falling water; a desert is a very dry area."}, {"category": "Vocabulary", "q": "A _____ can be difficult to walk through because it has very thick plants and trees.", "options": ["jungle", "hill", "lake", "beach"], "correct": 0, "why": "The notes distinguish a jungle as dense and difficult to move through.", "wrong": "A hill is raised land; a lake is inland water; a beach is land beside the sea or a lake."}, {"category": "Vocabulary", "q": "Which word means “a place where water falls from a height”?", "options": ["waterfall", "stream", "desert", "island"], "correct": 0, "why": "A waterfall is water falling over a steep drop.", "wrong": "A stream is a small flowing body of water; a desert is a dry region; an island is land surrounded by water."}, {"category": "Vocabulary", "q": "Which word means “a piece of land surrounded by water”?", "options": ["island", "river", "forest", "mountain"], "correct": 0, "why": "An island is surrounded by water.", "wrong": "A river is flowing water; a forest has many trees; a mountain is high land."}, {"category": "Vocabulary", "q": "Which sense do we use to recognize a smell?", "options": ["smell", "taste", "touch", "hear"], "correct": 0, "why": "We use our sense of smell to recognize odors.", "wrong": "Taste is for flavors; touch is for physical contact; hear is for sounds."}, {"category": "Vocabulary", "q": "We use our _____ to taste food.", "options": ["tongue", "nose", "ears", "skin"], "correct": 0, "why": "The tongue helps us taste food.", "wrong": "The nose is for smelling; ears are for hearing; skin helps with touch."}, {"category": "Vocabulary", "q": "A firm bed mainly supports your _____.", "options": ["back", "tongue", "ears", "blood"], "correct": 0, "why": "A firm bed can support your back.", "wrong": "The tongue is for taste; ears are for hearing; blood is not a body part supported by a bed."}, {"category": "Social Media", "q": "What does the speaker use social networks for?", "options": ["To stay connected, practise ads, and explore marketing campaigns.", "Only to buy food.", "Only to watch films.", "To avoid communicating with friends."], "correct": 0, "why": "The notes say social networks help the speaker stay connected with friends, practise running ads, and explore digital marketing campaigns.", "wrong": "B and C are not mentioned; D contradicts the purpose of staying connected."}, {"category": "Social Media", "q": "Which social network is described as the most popular in Vietnam in the notes?", "options": ["Facebook", "LinkedIn", "Pinterest", "Reddit"], "correct": 0, "why": "The supplied notes state that Facebook is the most popular network in Vietnam.", "wrong": "The other platforms are not identified as the most popular in the notes."}, {"category": "Social Media", "q": "Which platform does the speaker use the most?", "options": ["Facebook", "Instagram", "Zalo", "TikTok"], "correct": 0, "why": "The speaker says they use Facebook the most for studying and relaxing.", "wrong": "Instagram, Zalo, and TikTok are listed as platforms used, but not the one used most."}, {"category": "Social Media", "q": "What does the speaker usually post?", "options": ["Pictures of themselves and daily stories.", "Only business invoices.", "Only long academic essays.", "Nothing at all."], "correct": 0, "why": "The notes say the speaker usually posts pictures of themselves and daily stories.", "wrong": "B and C are not in the notes; D contradicts the stated posting habit."}, {"category": "Social Media", "q": "Why does the speaker follow Thầy Bá on TikTok?", "options": ["He shares useful digital marketing knowledge.", "He sells designer clothes.", "He teaches mountain climbing.", "He posts only cooking recipes."], "correct": 0, "why": "The notes explain that Thầy Bá shares valuable digital marketing knowledge related to the speaker’s major.", "wrong": "The other reasons are not supported by the document."}, {"category": "Social Media", "q": "Which apps does the speaker use to chat with friends?", "options": ["Messenger and Zalo", "Only email", "Maps and Calendar", "Only a shopping app"], "correct": 0, "why": "The notes say the speaker usually uses Messenger or Zalo to connect with friends.", "wrong": "The other options do not match the stated messaging apps."}, {"category": "Social Media", "q": "How can social media support a Digital Marketing student?", "options": ["By providing a platform to practise ads and analyse trends.", "By making studying unnecessary.", "By guaranteeing a job immediately.", "By preventing people from learning trends."], "correct": 0, "why": "The notes say social media gives a hands-on platform to practise ad campaigns and analyse trends.", "wrong": "B and D contradict learning; C promises a guarantee not stated in the notes."}, {"category": "Social Media", "q": "Which is a disadvantage of social media mentioned in the notes?", "options": ["It can involve scams and waste time.", "It always improves sleep.", "It cannot connect people.", "It always makes people richer."], "correct": 0, "why": "The notes identify scams and wasted time as disadvantages.", "wrong": "B, C, and D are unsupported or contradict the notes."}, {"category": "Social Media", "q": "What does the speaker plan to use more in the future?", "options": ["Facebook for advertising and posting content.", "No social networks at all.", "Only printed newspapers.", "Only a calculator app."], "correct": 0, "why": "The speaker plans to use Facebook more for ad setting and social media posting.", "wrong": "The other choices are not what the speaker says."}, {"category": "Social Media", "q": "Which sentence gives an opinion?", "options": ["I think Facebook is useful for learning.", "Facebook is a social network.", "I chat every day.", "I use Messenger."], "correct": 0, "why": "“I think...” explicitly introduces an opinion.", "wrong": "The other statements are presented as facts or personal habits without an opinion marker."}, {"category": "Shopping & Reading", "q": "What does Mike's store sell?", "options": ["Fruit, vegetables, cheese, bread, and cakes.", "Designer clothes and shoes.", "Phones and computers.", "Only coffee."], "correct": 0, "why": "The passage lists fruit, vegetables, cheese from a local farm, fresh homemade bread, and cakes.", "wrong": "The other product lists are not mentioned in the passage."}, {"category": "Shopping & Reading", "q": "Why is Mike worried?", "options": ["His business is slow and his attempts to sell more are not working.", "His store is too busy.", "He has no products to sell.", "The local people have no money."], "correct": 0, "why": "The passage says Mike's business is slow and different attempts to sell more food have not worked.", "wrong": "B and C contradict the passage; D contradicts the statement that local people have a lot of money."}, {"category": "Shopping & Reading", "q": "What is the first rule of business in the passage?", "options": ["Find out who your customers are and listen to them.", "Always raise prices.", "Sell only to tourists.", "Never change your products."], "correct": 0, "why": "The passage directly says to find out who customers are and listen to them.", "wrong": "The other rules are not stated and do not match the passage."}, {"category": "Shopping & Reading", "q": "Why do discount shoppers spend time in stores?", "options": ["They want to find everything at a good price.", "They want to meet friends for expensive lunches.", "They dislike saving money.", "They only buy luxury brands."], "correct": 0, "why": "Discount shoppers are described as wanting to find things at a good price.", "wrong": "B describes luxury shoppers; C and D contradict the passage."}, {"category": "Shopping & Reading", "q": "What do discount shoppers often do to get the best price?", "options": ["Shop online and look for sales.", "Always pay full price.", "Avoid comparing prices.", "Buy only from luxury department stores."], "correct": 0, "why": "The passage says discount shoppers often shop online and travel to find the best price, and buy items during sales.", "wrong": "B and C contradict their price-conscious behaviour; D describes the opposite of their preference."}, {"category": "Shopping & Reading", "q": "What do luxury shoppers prefer?", "options": ["Elegant department stores in the city centre.", "Only cheap local stores.", "Only traditional butchers.", "Stores with the lowest prices, whatever the quality."], "correct": 0, "why": "The passage says luxury shoppers prefer elegant department stores and do not mind paying a lot for favourite designer brands.", "wrong": "The other choices do not match the description of luxury shoppers."}, {"category": "Shopping & Reading", "q": "What is important to quality shoppers?", "options": ["Long-lasting, good-quality products.", "Buying the cheapest item every time.", "Never touching products before buying.", "Only shopping online."], "correct": 0, "why": "Quality shoppers look for products they can use for many years and are willing to pay a little more for something special.", "wrong": "B describes discount-seeking behaviour; C contradicts their preference to touch products; D is not stated."}, {"category": "Shopping & Reading", "q": "Why do quality shoppers like local stores?", "options": ["They want to support businesses in their area.", "Local stores are always the cheapest.", "They dislike good quality.", "They only want designer brands."], "correct": 0, "why": "The passage explicitly says they like local stores because they want to support local businesses.", "wrong": "B is not the stated reason; C and D contradict the passage."}, {"category": "Shopping & Reading", "q": "Which shopper type best matches someone who always waits for a sale?", "options": ["Discount shopper", "Luxury shopper", "Quality shopper", "None of these"], "correct": 0, "why": "Discount shoppers dislike paying full price and often buy during sales.", "wrong": "Luxury shoppers do not mind paying a lot; quality shoppers focus on quality and longevity; “none” is incorrect."}, {"category": "Shopping & Reading", "q": "A customer is happy to pay more for an item that lasts for years. What type is this customer?", "options": ["Quality shopper", "Discount shopper", "A customer who never shops", "A person who only wants the newest item"], "correct": 0, "why": "Quality shoppers are happy to pay a little more for special, durable products.", "wrong": "Discount shoppers focus on saving money; C and D do not match the passage description."}, {"category": "Shopping", "q": "What kind of things does the speaker usually buy online?", "options": ["Clothes from designer brands", "Fresh bread only", "Mountain equipment only", "Nothing"], "correct": 0, "why": "The notes say the speaker usually buys clothes from designer brands online because comparing prices is easier.", "wrong": "The other options are not stated."}, {"category": "Shopping", "q": "Why does the speaker like spending money on designer brands?", "options": ["They have unique designs and great quality.", "They are always the cheapest.", "They never have different designs.", "They cannot be bought online."], "correct": 0, "why": "The notes give unique designs and great quality as the reasons.", "wrong": "B and C contradict the notes; D is unsupported."}, {"category": "Shopping", "q": "Which item does the speaker NOT like spending money on?", "options": ["Expensive things they do not really need", "Useful products they need", "Good-quality products", "Items with a practical purpose"], "correct": 0, "why": "The Vietnamese note says the speaker dislikes spending on expensive things they do not really need because it is wasteful.", "wrong": "The other choices do not match that stated dislike."}, {"category": "Facts & Opinions", "q": "Which phrase is commonly used to introduce an opinion?", "options": ["In my opinion, ...", "At 7 o'clock, ...", "There are three ...", "It is located at ..."], "correct": 0, "why": "“In my opinion” is an opinion phrase listed in the notes.", "wrong": "The other expressions commonly introduce time, quantity, or location facts."}, {"category": "Nature", "q": "Which pair is correctly matched?", "options": ["A stream — a small flowing body of water", "A desert — a large forest", "A beach — a high mountain", "A river — land surrounded by water"], "correct": 0, "why": "A stream is a small flowing body of water; this is the correct match.", "wrong": "A desert is dry land; a beach is land beside water; an island is land surrounded by water, not a river."}, {"category": "Nature", "q": "Which place is described as very dry and often sandy?", "options": ["Desert", "Lake", "Waterfall", "Forest"], "correct": 0, "why": "A desert is a very dry region.", "wrong": "A lake is a body of water; a waterfall is falling water; a forest is an area with many trees."}, {"category": "Nature", "q": "Which word means land with many trees and plants, usually easier to move through than a jungle in the notes?", "options": ["Forest", "Jungle", "Island", "Hill"], "correct": 0, "why": "The notes distinguish forest as more open and easier to move through than a dense jungle.", "wrong": "Jungle is described as thick and difficult to move through; island and hill refer to landforms."}];
+const letters = ["A","B","C","D"];
+let questions=[], answers={}, current=0, mode="practice", secondsLeft=2700, timerId=null, submitted=false, reviewOnly=false;
+const $=id=>document.getElementById(id);
+function shuffle(a){for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a}
+function prepare(list){
+  return shuffle(list.map((q,idx)=>{
+    const opts=q.options.map((text,i)=>({text,correct:i===q.correct}));
+    shuffle(opts);
+    return {...q,options:opts,correct:opts.findIndex(o=>o.correct),originalIndex:idx};
+  }));
+}
+function start(list=BANK){
+  clearInterval(timerId); mode=document.querySelector('input[name="mode"]:checked')?.value||"practice";
+  questions=prepare(list); answers={};current=0;submitted=false;reviewOnly=false;secondsLeft=2700;
+  $("home").classList.add("hidden");$("result").classList.add("hidden");$("quiz").classList.remove("hidden");
+  $("timer").classList.toggle("hidden",mode!=="exam");$("examNote").classList.toggle("hidden",mode!=="exam");
+  $("submitBtn").classList.toggle("hidden",mode!=="exam");
+  if(mode==="exam") timerId=setInterval(tick,1000);
+  render();
+  window.scrollTo({top:0,behavior:"smooth"});
+}
+function tick(){secondsLeft--;let m=Math.floor(Math.max(0,secondsLeft)/60),s=Math.max(0,secondsLeft)%60;$("timer").textContent=String(m).padStart(2,"0")+":"+String(s).padStart(2,"0");$("timer").classList.toggle("warn",secondsLeft<=300);if(secondsLeft<=0){clearInterval(timerId);finish(true)}}
+function render(){
+ const q=questions[current];if(!q)return;
+ $("progressText").textContent=`Câu ${current+1} / ${questions.length}`;
+ $("answeredText").textContent=`Đã trả lời: ${Object.keys(answers).length} / ${questions.length}`;
+ $("progressBar").style.width=`${(current+1)/questions.length*100}%`;
+ $("qnum").textContent=`QUESTION ${current+1}`;$("category").textContent=q.category;
+ $("questionText").textContent=q.q;
+ $("options").innerHTML="";
+ q.options.forEach((o,i)=>{
+  const b=document.createElement("button");b.className="option";b.type="button";
+  const letter=document.createElement("span");letter.className="letter";letter.textContent=letters[i];
+  const text=document.createElement("span");text.textContent=o.text;
+  b.append(letter,text);
+  if(answers[current]!==undefined){
+   b.disabled=true;
+   if(i===q.correct)b.classList.add("correct");
+   else if(i===answers[current])b.classList.add("incorrect");
+  }
+  b.addEventListener("click",()=>choose(i));$("options").appendChild(b);
+ });
+ $("feedback").classList.add("hidden");$("feedback").innerHTML="";$("feedback").className="feedback hidden";
+ if(mode==="practice"&&answers[current]!==undefined) showFeedback();
+ $("prevBtn").disabled=current===0;
+ $("nextBtn").textContent=current===questions.length-1?(mode==="practice"?"Xem kết quả →":"Câu cuối →"):"Câu tiếp theo →";
+ $("submitBtn").textContent=Object.keys(answers).length===questions.length?"Nộp bài":"Nộp bài";
+}
+function choose(i){
+ if(answers[current]!==undefined||submitted)return;
+ answers[current]=i;
+ if(mode==="practice"){render();showFeedback()}else render();
+}
+function showFeedback(){
+ const q=questions[current],picked=answers[current];if(picked===undefined)return;
+ const ok=picked===q.correct,box=$("feedback");
+ box.className="feedback "+(ok?"good":"bad");box.classList.remove("hidden");
+ const title=document.createElement("h3");title.textContent=ok?"✓ Chính xác!":"✗ Chưa chính xác";
+ const p1=document.createElement("p");p1.className="correctline";p1.textContent=`Đáp án đúng: ${letters[q.correct]}. ${q.options[q.correct].text}`;
+ const p2=document.createElement("p");p2.textContent="Vì sao đúng? "+q.why;
+ const p3=document.createElement("p");p3.textContent="Vì sao các lựa chọn còn lại sai? "+q.wrong;
+ box.replaceChildren(title,p1,p2,p3);
+}
+function finish(auto=false){
+ if(submitted)return;submitted=true;clearInterval(timerId);
+ $("quiz").classList.add("hidden");$("result").classList.remove("hidden");
+ const correct=questions.reduce((n,q,i)=>n+(answers[i]===q.correct?1:0),0);
+ const wrong=questions.reduce((n,q,i)=>n+(answers[i]!==undefined&&answers[i]!==q.correct?1:0),0);
+ const blank=questions.length-correct-wrong;
+ $("scorePercent").textContent=Math.round(correct/questions.length*100)+"%";
+ $("correctCount").textContent=correct;$("wrongCount").textContent=wrong;$("blankCount").textContent=blank;
+ $("resultTitle").textContent=auto?"Hết giờ — kết quả bài thi":"Kết quả bài làm";
+ $("resultMessage").textContent=`Bạn trả lời đúng ${correct}/${questions.length} câu. ${auto?"Thời gian 45 phút đã kết thúc.":""} Hãy xem lời giải để hiểu rõ các điểm cần ôn lại.`;
+ $("retryWrongBtn").classList.toggle("hidden",wrong===0);
+ $("review").classList.add("hidden");$("review").innerHTML="";
+ window.scrollTo({top:0,behavior:"smooth"});
+}
+function showReview(onlyWrong=false){
+ const box=$("review");box.innerHTML="";box.classList.remove("hidden");
+ const heading=document.createElement("h3");heading.textContent=onlyWrong?"Ôn lại các câu sai / chưa trả lời":"Lời giải chi tiết toàn bài";box.appendChild(heading);
+ let n=0;
+ questions.forEach((q,i)=>{
+  if(onlyWrong&&answers[i]===q.correct)return;
+  n++;const item=document.createElement("div");item.className="review-item";
+  const h=document.createElement("strong");h.textContent=`${n}. ${q.q}`;item.appendChild(h);
+  const picked=answers[i];
+  const status=document.createElement("p");status.className=picked===q.correct?"review-good":"review-bad";
+  status.textContent=picked===undefined?"Chưa trả lời.":picked===q.correct?"Bạn chọn đúng.":`Bạn chọn ${letters[picked]}: ${q.options[picked].text} — chưa đúng.`;item.appendChild(status);
+  const ans=document.createElement("p");ans.innerHTML="<strong>Đáp án đúng:</strong> "+letters[q.correct]+". "+escapeHtml(q.options[q.correct].text);item.appendChild(ans);
+  const why=document.createElement("p");why.textContent="Giải thích: "+q.why;item.appendChild(why);
+  const other=document.createElement("p");other.textContent="Các lựa chọn còn lại: "+q.wrong;item.appendChild(other);
+  box.appendChild(item);
+ });
+ box.scrollIntoView({behavior:"smooth",block:"start"});
+}
+function escapeHtml(s){return s.replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]))}
+$("startBtn").addEventListener("click",()=>start());
+$("prevBtn").addEventListener("click",()=>{if(current>0){current--;render()}});
+$("nextBtn").addEventListener("click",()=>{if(current<questions.length-1){current++;render()}else if(mode==="practice"){finish()}});
+$("submitBtn").addEventListener("click",()=>{if(confirm("Bạn có chắc muốn nộp bài và xem kết quả?"))finish()});
+$("retryWrongBtn").addEventListener("click",()=>{const wrong=questions.filter((q,i)=>answers[i]!==q.correct);if(wrong.length)start(wrong)});
+$("allReviewBtn").addEventListener("click",()=>showReview(false));
+$("restartBtn").addEventListener("click",()=>{clearInterval(timerId);$("result").classList.add("hidden");$("home").classList.remove("hidden");window.scrollTo({top:0,behavior:"smooth"})});
+</script>
+</body>
+</html>
